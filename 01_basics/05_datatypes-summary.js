@@ -37,4 +37,26 @@ const myFunction=function(){
     console.log("Hello Word");
 }
 
-console.log(typeof myObj);
+// console.log(typeof myObj);
+
+// ####################### Memory ##############
+
+// Stack (Primitive -> copy of value declear variable) ,Heap(Non- Primitive=> original value reference)
+
+let myYouTubeName="samimanvar"
+
+let anothername=myYouTubeName
+anothername="chaiandcode"
+console.log(myYouTubeName);
+console.log(anothername);
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user1"
+}
+
+let userTwo=userOne
+
+userTwo.email="samim@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
